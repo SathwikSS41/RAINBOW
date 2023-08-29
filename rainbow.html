@@ -1,0 +1,30 @@
+
+<html>
+	<head>
+		<title>MESMERIZING RAINBOW</title>
+		<style type="text/css">
+			body{
+				text-align: center;
+				margin: 20%;
+			}
+			button{
+				cursor: pointer;
+				background-color: rgb(218, 41, 194);
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Charming colors </h1>
+		<button id="but"><h3>Touch here!</h3></button>
+		<script>
+			const btn=document.getElementById('but');
+			const body=document.querySelector('body');
+			const color=['green','indigo','yellow','orange','blue','red','violet'];
+			document.addEventListener('click',function(){
+			const colorIndex=parseInt(Math.random()*color.length);
+			body.style.backgroundColor=color[colorIndex];
+		});
+	</script>
+	</body>
+</html>
